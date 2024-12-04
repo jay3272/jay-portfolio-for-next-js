@@ -1,0 +1,35 @@
+.tagInputContainer {
+  padding: var(--static-space-4);
+  border: 1px solid var(--color-neutral-weak);
+  border-radius: var(--border-radius-base);
+  background-color: var(--color-background-base);
+
+  &:focus-within {
+    border-color: var(--color-focus-primary);
+  }
+}
+
+.label {
+  font-size: var(--font-size-small);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text-neutral-strong);
+}
+
+.tagInput {
+  .once-tag {
+    background-color: var(--color-background-neutral-subtle);
+    color: var(--color-text-neutral-strong);
+    transition: var(--transition-micro-medium);
+
+    &:hover {
+      background-color: var(--color-background-neutral-strong);
+      color: var(--color-text-on-neutral);
+    }
+  }
+
+  .once-tag--removable {
+    &:hover {
+      border: 1px solid var(--color-danger-strong);
+    }
+  }
+}
