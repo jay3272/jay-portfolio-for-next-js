@@ -63,42 +63,66 @@ const about = {
         display: true
     },
     calendar: {
-        display: true,
-        link: 'https://cal.com'
+        display: false,
+        link: ''
     },
     intro: {
         display: true,
         title: 'Introduction',
-        description: <>Selene is a Jakarta-based design engineer with a passion for transforming complex challenges into simple, elegant design solutions. Her work spans digital interfaces, interactive experiences, and the convergence of design and technology.</>
+        description: <>我是吳介,宜蘭人現居桃園,雲科大電子工程、中央大學網路學習科技研究所,擅長軟體工程.</>
     },
     work: {
         display: true, // set to false to hide this section
-        title: 'Work Experience',
+        title: '工作經驗',
         experiences: [
             {
-                company: 'FLY',
-                timeframe: '2022 - Present',
-                role: 'Senior Design Engineer',
+                company: '展達通訊-群光集團',
+                timeframe: '2024 - Present',
+                role: 'Software Engineer',
                 achievements: [
-                    <>Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user engagement and 30% faster load times.</>,
-                    <>Spearheaded the integration of AI tools into design workflows, enabling designers to iterate 50% faster.</>
+                    <>負責wifi、pon產品產測程式.</>,
+                    <>主要開發產測程式，網通儀器程控與DUT環境架設、ThroughtPut測試.</>,
+                    <>相關技能C#,Python.</>
                 ],
                 images: [ // optional: leave the array empty if you don't want to display images
                     {
-                        src: '/images/projects/project-01/cover-01.jpg',
-                        alt: 'Once UI Project',
+                        src: '',
+                        alt: '',
                         width: 16,
                         height: 9
                     }
                 ]
             },
             {
-                company: 'Creativ3',
-                timeframe: '2018 - 2022',
-                role: 'Lead Designer',
+                company: '日月光',
+                timeframe: '2022',
+                role: 'CMES工程師SD',
                 achievements: [
-                    <>Developed a design system that unified the brand across multiple platforms, improving design consistency by 40%.</>,
-                    <>Led a cross-functional team to launch a new product line, contributing to a 15% increase in overall company revenue.</>
+                    <>負責CP、FT DownTime系統.</>,
+                    <>學習到大型系統的維運，軟體開發的生命週期，從需求分析、開發與測試，彈性的軟體架構提供多人維運.</>,
+                     <>相關技能vb,c#,gitlab,oracle sql</>
+                ],
+                images: [ ]
+            },
+            {
+                company: '台林電通',
+                timeframe: '2018 - 2021、2022 - 2023',
+                role: '自動化軟體工程師',
+                achievements: [
+                    <>Wifi、車用產品、工廠自動化.</>,
+                    <>開發倉儲系統替公司節省百萬元委外開發，且客製化功能設計..</>,
+                     <>相關技能vb,c# mvc,python,Auto it,JavaScript,MS SQL</>
+                     <>GPIB,CAN bus,Modbus,RS232</>
+                ],
+                images: [ ]
+            },
+            {
+                company: '宜碩自動化',
+                timeframe: '2014 - 2018',
+                role: 'PLC系統工程師',
+                achievements: [
+                    <>美國、德國出差負責紙模型機台與製漿系、長春化工定時除塵環境監控系統.</>,
+                     <>AB PLC,三菱PLC</>
                 ],
                 images: [ ]
             }
@@ -109,12 +133,12 @@ const about = {
         title: 'Studies',
         institutions: [
             {
-                name: 'University of Jakarta',
-                description: <>Studied software engineering.</>,
+                name: '中央大學',
+                description: <>專注於AI模型訓練，GPT應用於倉儲系統、設計開發遊戲程式輔助英語學習.</>,
             },
             {
-                name: 'Build the Future',
-                description: <>Studied online marketing and personal branding.</>,
+                name: '雲林科技大學',
+                description: <>電子工程系，學習MCU、數位電路板、太陽能薄膜製程.</>,
             }
         ]
     },
@@ -123,7 +147,7 @@ const about = {
         title: 'Technical skills',
         skills: [
             {
-                title: 'Figma',
+                title: 'Web',
                 description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
                 images: [
                     {
@@ -141,7 +165,7 @@ const about = {
                 ]
             },
             {
-                title: 'Next.js',
+                title: 'Winform',
                 description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
                 images: [
                     {
