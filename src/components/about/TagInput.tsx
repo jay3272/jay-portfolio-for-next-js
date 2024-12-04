@@ -1,3 +1,5 @@
+'use client';
+
 import React, { useState } from 'react';
 import { Flex, Text, TagInput, Tag } from '@/once-ui/components';
 import styles from './tagInput.module.scss';
