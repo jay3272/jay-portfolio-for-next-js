@@ -111,7 +111,7 @@ const about = {
                 achievements: [
                     <>Wifi、車用產品、工廠自動化.</>,
                     <>開發倉儲系統替公司節省百萬元委外開發，且客製化功能設計..</>,
-                     <>相關技能vb,c# mvc,python,Auto it,JavaScript,MS SQL</>
+                     <>相關技能vb,c# mvc,python,Auto it,JavaScript,MS SQL</>,
                      <>GPIB,CAN bus,Modbus,RS232</>
                 ],
                 images: [ ]
