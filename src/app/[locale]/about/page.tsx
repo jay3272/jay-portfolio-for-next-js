@@ -4,6 +4,7 @@ import TableOfContents from '@/components/about/TableOfContents';
 import styles from '@/components/about/about.module.scss'
 import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
 import { useTranslations } from 'next-intl';
+import SkillsInput from '@/components/about/skillInput';
 
 export async function generateMetadata(
     {params: {locale}}: { params: { locale: string }}
@@ -369,6 +370,7 @@ export default function About(
                                         )}
                                     </Flex>
                                 ))}
+                                <SkillsInput />
                             </Flex>
                         </>
                     )}
