@@ -1,53 +1,33 @@
 'use client';
 
 import React, { useState } from 'react';
-import { Flex, Text, TagInput, Tag } from '@/once-ui/components';
-import styles from './tagInput.module.scss';
+import { TagInput, TagInputProps } from './TagInput';
+import { Flex, Text } from '@/once-ui/components';
 
-interface TagInputProps {
-  id: string;
-  value: string[];
-  onChange: (tags: string[]) => void;
-  label?: string;
-}
+const TagInputComponent: React.FC = () => {
+    const [tags, setTags] = useState<string[]>(['Tag1', 'Tag2']);
 
-const TagInputComponent: React.FC<TagInputProps> = ({ id, value, onChange, label }) => {
-  const [tags, setTags] = useState<string[]>(value);
+    const handleTagsChange: TagInputProps['onChange'] = (newTags) => {
+        setTags(newTags);
+        console.log('Updated tags:', newTags); // 可替換成你的業務邏輯
+    };
 
-  const handleAddTag = (tag: string) => {
-    if (!tags.includes(tag) && tag.trim() !== '') {
-      const updatedTags = [...tags, tag];
-      setTags(updatedTags);
-      onChange(updatedTags);
-    }
-  };
-
-  const handleRemoveTag = (tag: string) => {
-    const updatedTags = tags.filter((t) => t !== tag);
-    setTags(updatedTags);
-    onChange(updatedTags);
-  };
-
-  return (
-    <Flex direction="column" gap="16" className={styles.tagInputContainer}>
-      {label && <Text className={styles.label}>{label}</Text>}
-      <TagInput
-        id={id}
-        value={tags}
-        onAdd={handleAddTag}
-        onRemove={handleRemoveTag}
-        placeholder="Add a tag..."
-        aria-label="tag-input"
-      />
-      <Flex direction="row" gap="8" wrap="wrap">
-        {tags.map((tag, index) => (
-          <Tag key={index} removable onRemove={() => handleRemoveTag(tag)}>
-            {tag}
-          </Tag>
-        ))}
-      </Flex>
-    </Flex>
-  );
+    return (
+        <Flex direction="column" gap="16" style={{ padding: '20px' }}>
+            <Text variant="h5">Tags Management</Text>
+            <TagInput
+                id="example"
+                value={tags}
+                onChange={handleTagsChange}
+                label="Enter Tags"
+                placeholder="Type and press Enter or ',' to add"
+                style={{
+                    border: '1px solid var(--color-neutral-weak)',
+                    borderRadius: 'var(--border-radius-base)',
+                }}
+            />
+        </Flex>
+    );
 };
 
 export default TagInputComponent;
