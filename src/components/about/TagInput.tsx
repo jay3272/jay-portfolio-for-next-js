@@ -1,8 +1,8 @@
 'use client';
 
 import React, { useState } from 'react';
-import { TagInput, TagInputProps } from './TagInput';
-import { Flex, Text } from '@/once-ui/components';
+import { TagInput, TagInputProps } from '@/once-ui/components';
+import styles from './tagInput.module.scss';
 
 const TagInputComponent: React.FC = () => {
     const [tags, setTags] = useState<string[]>(['Tag1', 'Tag2']);
