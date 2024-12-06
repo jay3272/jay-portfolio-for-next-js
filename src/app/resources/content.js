@@ -148,10 +148,10 @@ const about = {
         skills: [
             {
                 title: 'Web',
-                description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
+                description: <>點餐網站"https://yellow-bay-07b2d5310.4.azurestaticapps.net/"</>,
                 images: [
                     {
-                        src: 'https://yellow-bay-07b2d5310.4.azurestaticapps.net/',
+                        src: '/images/projects/project-01/cover-02.jpg',
                         alt: 'Project image',
                         width: 16,
                         height: 9
