@@ -48,7 +48,7 @@ const home = {
     title: `${person.name}'s Portfolio`,
     description: `作品集 - ${person.role}`,
     headline: <>程式語言職擔當</>,
-    subline: <>I'm Jay, 軟體工程界的 <InlineCode>杰倫</InlineCode>, 專研多種程式<br/> 工作經歷在OT與IT都有涉略, PLC、軟體自動化測試、網頁、、APP</>
+    subline: <>I'm Jay, 聽說周杰倫是一個種族，我是軟體工程界的 <InlineCode>杰倫</InlineCode>, 專研多種程式<br/> 工作經歷在OT與IT都有涉略, PLC、軟體自動化測試、網頁、、APP</>
 }
 
 const about = {
@@ -148,17 +148,12 @@ const about = {
         skills: [
             {
                 title: 'Web',
-                description: <>點餐網站"https://yellow-bay-07b2d5310.4.azurestaticapps.net/"</>,
+                description: <>點餐網站</>,
+                link: 'https://yellow-bay-07b2d5310.4.azurestaticapps.net/',
                 images: [
                     {
                         src: '/images/projects/project-01/posnext.jpg',
                         alt: '點餐網站',
-                        width: 16,
-                        height: 9
-                    },
-                    {
-                        src: '/images/projects/project-01/cover-03.jpg',
-                        alt: 'Project image',
                         width: 16,
                         height: 9
                     },
@@ -167,6 +162,7 @@ const about = {
             {
                 title: 'Winform',
                 description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
+                link: 'https://yellow-bay-07b2d5310.4.azurestaticapps.net/',
                 images: [
                     {
                         src: '/images/projects/project-01/cover-04.jpg',

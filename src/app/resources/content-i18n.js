@@ -120,6 +120,7 @@ const createI18nContent = (t) => {
                 {
                     title: 'Figma',
                     description: <>{t("about.technical.skills.Figma.description")}</>,
+                    link: 'https://yellow-bay-07b2d5310.4.azurestaticapps.net/',
                     images: [
                         {
                             src: '/images/projects/project-01/cover-02.jpg',
@@ -138,6 +139,7 @@ const createI18nContent = (t) => {
                 {
                     title: 'Next.js',
                     description: <>{t("about.technical.skills.Nextjs.description")}</>, // "." not accepted in next-intl namespace
+                    link: 'https://yellow-bay-07b2d5310.4.azurestaticapps.net/',
                     images: [
                         {
                             src: '/images/projects/project-01/cover-04.jpg',

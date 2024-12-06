@@ -1,4 +1,4 @@
-import { Avatar, Button, Flex, Heading, Icon, IconButton, SmartImage, Tag, Text } from '@/once-ui/components';
+import { Avatar, Button, Flex, Heading, Icon, IconButton, SmartImage, SmartLink, Tag, Text } from '@/once-ui/components';
 import { baseURL, renderContent } from '@/app/resources';
 import TableOfContents from '@/components/about/TableOfContents';
 import styles from '@/components/about/about.module.scss'
@@ -347,6 +347,12 @@ export default function About(
                                             onBackground="neutral-weak">
                                             {skill.description}
                                         </Text>
+                                        <SmartLink
+                                            href={skill.link}
+                                            iconSize="xs"
+                                        >
+                                            Link Label
+                                        </SmartLink>
                                         {skill.images.length > 0 && (
                                             <Flex
                                                 fillWidth paddingTop="m" gap="12"
