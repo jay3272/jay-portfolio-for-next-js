@@ -342,17 +342,12 @@ export default function About(
                                             variant="heading-strong-l">
                                             {skill.title}
                                         </Text>
-                                        <Text
-                                            variant="body-default-m"
-                                            onBackground="neutral-weak">
-                                            {skill.description}
-                                        </Text>
                                         <SmartLink
                                             href={skill.link}
                                             iconSize="xs"
                                         >
-                                            Link Label
-                                        </SmartLink>
+                                            {skill.description}
+                                        </SmartLink>                                        
                                         {skill.images.length > 0 && (
                                             <Flex
                                                 fillWidth paddingTop="m" gap="12"
