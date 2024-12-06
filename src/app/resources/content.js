@@ -151,8 +151,8 @@ const about = {
                 description: <>點餐網站"https://yellow-bay-07b2d5310.4.azurestaticapps.net/"</>,
                 images: [
                     {
-                        src: '/images/projects/project-01/cover-02.jpg',
-                        alt: 'Project image',
+                        src: '/images/projects/project-01/posnext.jpg',
+                        alt: '點餐網站',
                         width: 16,
                         height: 9
                     },
