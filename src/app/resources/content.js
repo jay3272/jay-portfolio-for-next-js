@@ -151,7 +151,7 @@ const about = {
                 description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
                 images: [
                     {
-                        src: '/images/projects/project-01/cover-02.jpg',
+                        src: 'https://yellow-bay-07b2d5310.4.azurestaticapps.net/',
                         alt: 'Project image',
                         width: 16,
                         height: 9
