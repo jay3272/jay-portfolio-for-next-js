@@ -1,7 +1,7 @@
 const baseURL = 'demo.magic-portfolio.com'
 
 // Enable localization
-const i18n = false;
+const i18n = ture;
 
 // Manage localized content in the messages folder
 const i18nOptions = {
