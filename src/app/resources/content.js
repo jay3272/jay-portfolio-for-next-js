@@ -217,7 +217,7 @@ const about = {
             },
             {
                 title: 'freecodecamp認證',
-                description: <>網頁開發300hr認證</>,
+                description: <>網頁開發認證</>,
                 link: 'https://www.freecodecamp.org/certification/jaywu77/responsive-web-design',
                 images: [
                     
