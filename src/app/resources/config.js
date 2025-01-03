@@ -11,7 +11,7 @@ const i18nOptions = {
 
 const routes = {
     '/':        true,
-    '/about':   false,
+    '/about':   true,
     '/work':    false,
     '/blog':    false,
     '/gallery': false,
