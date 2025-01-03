@@ -52,8 +52,8 @@ const home = {
 }
 
 const about = {
-    label: 'About',
-    title: 'About me',
+    label: 'Resume',
+    title: 'Resume',
     description: `Meet ${person.name}, ${person.role} from ${person.location}`,
     tableOfContent: {
         display: true,
@@ -80,18 +80,12 @@ const about = {
                 timeframe: '2024 - Present',
                 role: 'Software Engineer',
                 achievements: [
-                    <>負責wifi、pon產品產測程式.</>,
+                    <>負責wifi、Gpon產品產測程式.</>,
                     <>主要開發產測程式，網通儀器程控與DUT環境架設、ThroughtPut測試.</>,
-                    <>相關技能C#,Python.</>
+                    <>使用iTest儀器RF測試.</>,
+                    <>相關技能C#,Python、信而泰、iTest、TestCenter</>
                 ],
-                images: [ // optional: leave the array empty if you don't want to display images
-                    {
-                        src: '',
-                        alt: '',
-                        width: 16,
-                        height: 9
-                    }
-                ]
+                images: [ ]
             },
             {
                 company: '日月光',
@@ -99,7 +93,7 @@ const about = {
                 role: 'CMES工程師SD',
                 achievements: [
                     <>負責CP、FT DownTime系統.</>,
-                    <>學習到大型系統的維運，軟體開發的生命週期，從需求分析、開發與測試，彈性的軟體架構提供多人維運.</>,
+                    <>熟悉軟體開發的生命週期，包括需求分析、設計、開發、測試與部署，提升跨部門溝通與協作能力.</>,
                      <>相關技能vb,c#,gitlab,oracle sql</>
                 ],
                 images: [ ]
@@ -110,6 +104,10 @@ const about = {
                 role: '自動化軟體工程師',
                 achievements: [
                     <>Wifi、車用產品、工廠自動化.</>,
+                    <>Wifi: Throught Test. iperf測試</>,
+                    <>車用產品: 整合Chroma Hipot、Relay、PowerSupply等、CANBus測試電路板充放電.</>,
+                    <>透過Mobus擷取變頻器、扭力把手、台達PLC.</>,
+                    <>協助RD開發FPGA資料驗證，透過UART傳送資料驗證.</>,
                     <>開發倉儲系統替公司節省百萬元委外開發，且客製化功能設計..</>,
                      <>相關技能vb,c# mvc,python,Auto it,JavaScript,MS SQL</>,
                      <>GPIB,CAN bus,Modbus,RS232</>
@@ -122,7 +120,7 @@ const about = {
                 role: 'PLC系統工程師',
                 achievements: [
                     <>美國、德國出差負責紙模型機台與製漿系、長春化工定時除塵環境監控系統.</>,
-                     <>AB PLC,三菱PLC</>
+                     <>AB PLC,三菱PLC、HMI</>
                 ],
                 images: [ ]
             }
@@ -138,7 +136,7 @@ const about = {
             },
             {
                 name: '雲林科技大學',
-                description: <>電子工程系，學習MCU、數位電路板、太陽能薄膜製程.</>,
+                description: <>電子工程系，學習MCU、太陽能薄膜製程.</>,
             }
         ]
     },
@@ -147,8 +145,8 @@ const about = {
         title: 'Technical skills',
         skills: [
             {
-                title: 'Web',
-                description: <>點餐網站</>,
+                title: '點餐網站',
+                description: <>Link:這個專案上發想是想設計一個餐廳線上點餐的網站，主要功能為顧客查看菜單，並在手機上點選餐點後送出至後端資料庫，使用React與SQlite撰寫.</>,
                 link: 'https://yellow-bay-07b2d5310.4.azurestaticapps.net/',
                 images: [
                     {
@@ -160,16 +158,69 @@ const about = {
                 ]
             },
             {
-                title: 'Winform',
-                description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
-                link: 'https://yellow-bay-07b2d5310.4.azurestaticapps.net/',
+                title: '倉儲系統',
+                description: <>Link:論文專題結合GPT於倉儲系統，使用C# MVC、JavaScript、JQuery、MS SQL Server、Azure WebApi、Openai api撰寫的倉儲管理系統.</>,
+                link: 'https://github.com/jay3272/TE_ManagementSystem',
                 images: [
                     {
-                        src: '/images/projects/project-01/cover-04.jpg',
+                        src: '/images/projects/project-01/warehouse1.png',
                         alt: 'Project image',
                         width: 16,
                         height: 9
                     },
+                ]
+            },
+            {
+                title: 'Test Platform',
+                description: <>Link:系統測試平台:主要用於整合儀器(示波器、Led分析儀...).Winform，主要改用SQL改善flow文字檔不易維護與索引，順便練習C# MVP架構</>,
+                link: 'https://github.com/jay3272/TE_ManagementSystem',
+                images: [
+                    {
+                        src: '/images/projects/project-01/testplatform.jpg',
+                        alt: 'Project image',
+                        width: 16,
+                        height: 9
+                    },
+                ]
+            },
+            {
+                title: '英文學習小鴨遊戲',
+                description: <>Link:使用Unity C#開發，中央大學課程專題開發輔助小學生透過遊戲學習英文.</>,
+                link: 'https://github.com/jay3272/SuperDuck',
+                images: [
+                    
+                ]
+            },
+            {
+                title: '英文口說語音辨識學習',
+                description: <>Link:使用Unity C#開發，中央大學課程專題開發輔助小學生透過遊戲學習英文.</>,
+                link: 'https://www.youtube.com/watch?v=qWvyJl9Gpn0',
+                images: [
+                    
+                ]
+            },
+            {
+                title: '三菱PLC與Winform串接',
+                description: <>Link:使用Vb與三菱PLC串接做HMI.</>,
+                link: 'https://www.youtube.com/watch?v=xBkBo7X4sH0&list=PLaT5nNKtahpElHbAHM6RxwDg3OKxJF1La',
+                images: [
+                    
+                ]
+            },
+            {
+                title: '紙模裁邊機',
+                description: <>Link:使用AB PLC 、HMI、Demo kit，控制伺服馬達定位裁邊，在這專案學習PLC系統設計，IO點位檢測、步進馬達控制氣壓手臂與Loadcell判斷</>,
+                link: 'https://www.youtube.com/watch?v=Xaq_zIgBMKo&list=PLaT5nNKtahpElHbAHM6RxwDg3OKxJF1La&index=10',
+                images: [
+                    
+                ]
+            },
+            {
+                title: 'freecodecamp認證',
+                description: <>網頁開發300hr認證</>,
+                link: 'https://www.freecodecamp.org/certification/jaywu77/responsive-web-design',
+                images: [
+                    
                 ]
             }
         ]
