@@ -105,7 +105,7 @@ const about = {
                 images: [ ]
             },
             {
-                company: '台林電通',
+                company: 'Tailyn',
                 timeframe: '2018 - 2021、2022 - 2023',
                 role: '自動化軟體工程師',
                 achievements: [
