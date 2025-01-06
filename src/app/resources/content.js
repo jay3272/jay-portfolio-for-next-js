@@ -188,7 +188,12 @@ const about = {
                 description: <>Link:使用Unity C#開發，中央大學課程專題開發輔助小學生透過遊戲學習英文.</>,
                 link: 'https://github.com/jay3272/SuperDuck',
                 images: [
-                    
+                    {
+                        src: '/images/projects/project-01/supduck.png',
+                        alt: 'Project image',
+                        width: 16,
+                        height: 9
+                    },
                 ]
             },
             {
@@ -196,7 +201,12 @@ const about = {
                 description: <>Link:使用Unity C#開發，中央大學課程專題開發輔助小學生透過遊戲學習英文.</>,
                 link: 'https://www.youtube.com/watch?v=qWvyJl9Gpn0',
                 images: [
-                    
+                    {
+                        src: '/images/projects/project-01/engspk.png',
+                        alt: 'Project image',
+                        width: 16,
+                        height: 9
+                    },
                 ]
             },
             {
@@ -204,7 +214,12 @@ const about = {
                 description: <>Link:使用Vb與三菱PLC串接做HMI.</>,
                 link: 'https://www.youtube.com/watch?v=xBkBo7X4sH0&list=PLaT5nNKtahpElHbAHM6RxwDg3OKxJF1La',
                 images: [
-                    
+                    {
+                        src: '/images/projects/project-01/plcvb.png',
+                        alt: 'Project image',
+                        width: 16,
+                        height: 9
+                    },
                 ]
             },
             {
@@ -212,7 +227,12 @@ const about = {
                 description: <>Link:使用AB PLC 、HMI、Demo kit，控制伺服馬達定位裁邊，在這專案學習PLC系統設計，IO點位檢測、步進馬達控制氣壓手臂與Loadcell判斷</>,
                 link: 'https://www.youtube.com/watch?v=Xaq_zIgBMKo&list=PLaT5nNKtahpElHbAHM6RxwDg3OKxJF1La&index=10',
                 images: [
-                    
+                    {
+                        src: '/images/projects/project-01/abplc.png',
+                        alt: 'Project image',
+                        width: 16,
+                        height: 9
+                    },
                 ]
             },
             {
@@ -220,7 +240,12 @@ const about = {
                 description: <>網頁開發認證</>,
                 link: 'https://www.freecodecamp.org/certification/jaywu77/responsive-web-design',
                 images: [
-                    
+                    {
+                        src: '/images/projects/project-01/fcc.png',
+                        alt: 'Project image',
+                        width: 16,
+                        height: 9
+                    },
                 ]
             }
         ]
